@@ -29,7 +29,7 @@ average_stars = reviews_data_df.groupby('business_id')['stars'].mean()
 
 filename = 'restaurants.csv'
 filepath = os.path.join(filename)
-restaurant_data_df = pd.read_csv(filepath)
+restaurant_data_df = pd.read_csv(filepath, encoding = "ISO-8859-1")
 restaurant_data_df.rename(columns={'stars':'overall_stars'},inplace=True)
 combined = restaurant_data_df.merge(pd.DataFrame(average_stars),left_on='business_id',right_index=True)
 
