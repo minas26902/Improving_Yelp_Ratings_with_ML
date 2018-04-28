@@ -1,4 +1,4 @@
-*# UCBBEL Projet #3 ML Proposal*
+## UCBBEL Projet #3 ML Proposal
 
 ## Title: Correlating Yelp Reviews with Star Ratings 
   OR Automating star ratings in Yelp based on Natural Language Processing
