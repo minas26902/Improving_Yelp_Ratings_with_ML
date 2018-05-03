@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Yelp Review Analysis</title>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          <link rel="stylesheet" type="text/css" href="style.css"> 
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+         
+      </head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <button class="navbar-header"><a href="index.html">Home</a></button>
+      
+      <div class="btn-group navbar-right">
+          <button type="button" class="navbar-header" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="">Methods</a>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="ML_al.html">#1 </a></li>
+            
+          </ul>
+          <button class="navbar-header"><a href="GuessGame.html">Guess Game</a></button>
+          
+          
+      </div>  
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+    <h1>Data</h1>
+     <p> The data used in this project was downloaded from 
+       <a class= "data" href="https://www.kaggle.com/yelp-dataset/yelp-dataset/data">Kaggle Yelp Dataset</a>
+        (yelp_business.csv and yelp_review.csv). As you can see this data skewed geographically. </p>
+     
+     <img id="datapicture" src="dashboardmap.PNG">
+     <p> Based on the data we have top ten business with highest number of reviews are: </p>
+     <img id="datapicture" src="dashboardtop10.PNG">
+     <p> Also top cities with highest number of reviews are: </p>
+     <img id="datapicture" src="dashboardtop10city.PNG">
+     <h1>Slicing the data</h1>
+     <p> In order for us to make a better sence of this massive dataset (5,261,668 reviews and 174,567 unique bussines),
+        we focused on foods,resturants, and bars categories (1294 unique business ).
+        Then after analyzing the reviewers behaivor, for reduction the body of data, we focused on the reviewers with 50 to 100
+         reviews (323,310 reviews). The interasting fact is frequent reviewers intend to put 5 stars review!   </p>
+     <img id="datapicture" src="dashboardstars.PNG">  
+  </div>
+ 
+</body>
+</html>
+      

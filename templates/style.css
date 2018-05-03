@@ -1,0 +1,135 @@
+/*
+ First External CSS Stylesheet
+ */
+
+/* Styling for HTML elements */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: #333;
+  background: #efeee7;
+}
+
+header {
+  background: #333;
+}
+
+p {
+  padding: 1%;
+  margin: 2%;
+  font-family: sans-serif;    /*Georgia, "Times New Roman", Times, serif; */
+  font-size: 16px;
+  line-height: 150%;
+  color: #333;
+  text-align: left;
+}
+
+h1 {
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: left;
+  border-bottom:1px solid #FCFCFC; 
+  width:80%;
+}
+
+h3 {
+  font-size: 18px;
+  color: #333;
+  text-align: left;
+}
+
+h4 {
+  background: linear-gradient(to right, #CE0909 20%, #FFF 20%) bottom .5em left .8em no-repeat, linear-gradient(#323A45, #323A45);
+  background-size: 200% 1px, 100% 100%;
+  padding: .5em;
+  color: #FDFFFE;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+
+a {
+  color: white; 
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  background-color: #8B0F0F;
+}
+
+.data {
+  color: #8B0F0F;
+}
+/* Selecting elements by class */
+.container {
+  margin: 0 auto;
+ /* position: relative;*/
+  text-align: center;
+}
+
+.navbar {
+  padding: 0px;
+  background: #333; /*#FCFCFC*/
+}
+
+/* Getting rid of the default link styles here */
+.navbar li a {
+  color: black;
+  text-decoration: none;
+}
+
+#mainpicture {
+  float:center;
+  height: 300px;
+  width: 80%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+#datapicture {
+  float:center;
+  height: 400px;
+  width: 80%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen
+ is smaller than 480 pixels */
+
+@media (max-width: 1023px) {
+  .navbar li {
+    padding: 10px;
+  }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
+
+  
+  
+}
