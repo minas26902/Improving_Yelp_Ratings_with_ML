@@ -8,18 +8,20 @@
 
 ### Link to Github repo: https://github.com/minas26902/UCB_Project3_ML
 
-**Goal:** When you are researching restaurants on Yelp, do you look at the star rating or do you read the review? Do you look at both? A star rating doesn’t always reflect the review and vice-versa, since these are input separately by the reviewer, introducing some rating bias. Our goal is to apply Natural Language Processing (NLP) on Yelp reviews in order to output a star rating so that reviews and ratings are more strongly correlated. In order to make our model more robust, we will have humans rate reviews, and we will incorporate these ratings into our test model to get a sense of how humans are reading the sentiment.
+**Problem:** When you are researching restaurants on Yelp, do you look at the star rating or do you read the review? Do you look at both? A star rating doesn’t always reflect the review and vice-versa, since these are input separately by the reviewer, introducing some rating bias. 
+
+**Goal:** Our goal is to apply Natural Language Processing (NLP) on Yelp reviews in order to output a star rating so that reviews and ratings are more strongly correlated. In order to make our model more robust, we will have humans rate reviews, and we will incorporate these ratings into our test model to get a sense of how humans are reading the sentiment.
 
 **Hypothesis:** We hypothesize that automating star ratings based on NLP of restaurant reviews will improve Yelp review experience by normalizing reviewer sentiment.
 
-**ML algorithms to be used:
+**ML algorithms to be used:**
   1. Naive Bayes
   2. k-NN
   3. KMeans
   4. LSTM
   5. ...
   
- **Libraries:
+ **Libraries:**
  1. Numpy
  2. Scipy
  3. Scikit_Learn
@@ -31,7 +33,7 @@
  9. HTML/ CSS/ Bootstrap
  10. Tableau
  
-**Project components, steps, analyses, and final products:
+**Project components, steps, analyses, and final products:**
   1. Components and final products 
       * ML algorithms
       * Game (user rates reviews)/HTML page
@@ -46,7 +48,7 @@
       * Incorporate new human ratings from game into the model
       * Other...
 
-**Questions/Topics:
+**Questions/Topics:**
 
 1. (ML) Are yelp reviews highly correlated to restaurant quality (based on star rating) ? In other words, are the reviews useful? 
 2. What percentage of reviews talk about the quality of the food versus the quality of the service?
