@@ -17,19 +17,19 @@
   2. k-NN
   3. KMeans
   4. LSTM
-  5...
+  5. ...
   
  **Libraries:
- 1.Numpy
- 2.Scipy
- 3.Scikit_Learn
- 4.Pandas
- 5.Matplotlib
- 6.NLTK
- 7.PySpark
- 8.Keras
- 9.HTML/ CSS/ Bootstrap
- 10.Tableau
+ 1. Numpy
+ 2. Scipy
+ 3. Scikit_Learn
+ 4. Pandas
+ 5. Matplotlib
+ 6. NLTK
+ 7. PySpark
+ 8. Keras
+ 9. HTML/ CSS/ Bootstrap
+ 10. Tableau
  
 **Project components, steps, analyses, and final products:
   1. Components and final products 
