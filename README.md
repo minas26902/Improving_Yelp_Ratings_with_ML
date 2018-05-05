@@ -1,6 +1,6 @@
 ## UCBBEL Projet #3 ML Proposal
 
-## Improving the Yelp Review Experience by Normalizing Reviewer Sentiment
+## Improving the Yelp Review Experience by Stardardizing Reviewer Sentiment
 
 ### Team: Alex, Hee, Beheshteh, and Angela
 
