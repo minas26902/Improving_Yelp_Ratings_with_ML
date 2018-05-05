@@ -2,11 +2,11 @@
 
 ## Improving the Yelp Review Experience by Normalizing Reviewer Sentiment
 
-## Team: Alex, Hee, Beheshteh, and Angela
+### Team: Alex, Hee, Beheshteh, and Angela
 
-## Dataset link - Yelp Dataset in Kaggle with a focus on Restaurants- https://www.kaggle.com/yelp-dataset/yelp-dataset
+### Dataset link - Yelp Dataset in Kaggle with a focus on Restaurants- https://www.kaggle.com/yelp-dataset/yelp-dataset
 
-## Link to Github repo: https://github.com/minas26902/UCB_Project3_ML
+### Link to Github repo: https://github.com/minas26902/UCB_Project3_ML
 
 **Goal:** When you are researching restaurants on Yelp, do you look at the star rating or do you read the review? Do you look at both? A star rating doesn’t always reflect the review and vice-versa, since these are input separately by the reviewer, introducing some rating bias. Our goal is to apply Natural Language Processing (NLP) on Yelp reviews in order to output a star rating so that reviews and ratings are more strongly correlated. In order to make our model more robust, we will have humans rate reviews, and we will incorporate these ratings into our test model to get a sense of how humans are reading the sentiment.
 
