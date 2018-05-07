@@ -8,18 +8,20 @@
 
 ### Link to Github repo: https://github.com/minas26902/UCB_Project3_ML
 
-**Problem:** When you are researching restaurants on Yelp, do you look at the star rating or do you read the review? Do you look at both? A star rating doesn’t always reflect the review and vice-versa, since these are input separately by the reviewer, introducing some rating bias. 
+**Problem:** When you are researching restaurants on Yelp, do you look at the star rating or do you read the review? Do you look at both? Given that reviews are highly subjective, and star ratings can be influenced by various aspects of business performance, can we use machine learning to standardize the interpretation of reviews? 
 
-**Goal:** Our goal is to apply Natural Language Processing (NLP) on Yelp reviews in order to output a star rating so that reviews and ratings are more strongly correlated. In order to make our model more robust, we will have humans rate reviews, and we will incorporate these ratings into our test model to get a sense of how humans are reading the sentiment.
+
+**Goal:** Our goal is to apply Natural Language Processing (NLP) and other features from the Yelp reviews into a model that outputs a new 5-star-rating, so that there is less discrepancy between reviews and star ratings. In order to make our model more robust, we will have humans rate reviews, and we will incorporate these ratings into our test model to get a sense of how humans are reading the sentiment.
 
 **Hypothesis:** We hypothesize that automating star ratings based on NLP of restaurant reviews will improve Yelp review experience by normalizing reviewer sentiment.
 
-**ML algorithms to be used:**
+**ML algorithms:**
   1. Naive Bayes
   2. k-NN
   3. KMeans
   4. LSTM
-  5. ...
+  5. N-Gram
+  6. TD-IDF
   
  **Libraries:**
  1. Numpy
@@ -32,6 +34,9 @@
  8. Keras
  9. HTML/ CSS/ Bootstrap
  10. Tableau
+ 
+ **Sentiment Analysis Lexicon:**
+ 1. AFINN 
  
 **Project components, steps, analyses, and final products:**
   1. Components and final products 
@@ -58,5 +63,4 @@
 6. (ML) Is there a pattern to Yelp Elite status? Elite vs non-elite.
 7. Patterns in ratings/review sentiment correlated to business attributes? (Outdoor seating, live music, etc.)
 8. Patterns in 'useful' reviews?
-9. TEST IDEA: Use NLP to train model, test then have HUMANS rate as well and compare the difference
-
+9. Use NLP to train model, test then have HUMANS rate as well and compare the difference
