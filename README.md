@@ -53,7 +53,7 @@
       * Incorporate new human ratings from game into the model
       * Other...
 
-**Questions/Topics:**
+**Questions/Topics of Interest:**
 
 1. (ML) Are yelp reviews highly correlated to restaurant quality (based on star rating) ? In other words, are the reviews useful? 
 2. What percentage of reviews talk about the quality of the food versus the quality of the service?
