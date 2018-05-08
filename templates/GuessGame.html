@@ -41,40 +41,51 @@
  <div class = "row">
     <div class="col-md-3 text-center"></div>
     <div class="col-md-6 text-center">
-    <!--
-     Alternate input style where each digit is a dropdown wheel. Slower to input digits, but less input validation needed.
-    <div id="comboLock"></div>
-    <a id="check" class="btn-block btn btn-primary mx-auto w-100 m-2">Guess</a>
-    -->
-    <textarea rows="5" cols="80" name="comment" form="usrform" id = "review_text">
-        Enter review here...  </textarea>
-    <form id="guess">
-        <input id="guess_stars" type="int" form="guess" placeholder="Your rating (1-5)" />
-        <input id="machine_stars" type="int" form="guess" placeholder="Machine rating (1-5)" />
-    </form>
-    <button id="submit" type="button" class="btn btn-danger m-3">Check!</button>
-    <div id="plot"></div>
-    <div id="pin_diff"></div>
-  </div>
+  <form onsubmit="return false">
+  <div class="form-group">
+    <label for="SATScore"> SAT Score: </label>
+    <input class="form-control" id="satAvg" placeholder="SATScore">
+  </div>  
+  <button type="submit" class="btn btn-primary" id= "predict-btn" value="submit" >Predict Range</button>
+</form>
+
+  
   <div class="col-md-3 text-center"></div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+
+
   <script type="text/javascript">
     // This .on("click") function will trigger the request
-    d3.select("#submit").on("click", function(event) {
+    d3.select("#predict-btn").on("click", function(event) {
 
       // d3.event.preventDefault() can be used to prevent an event's default behavior.
       // Here, it prevents the submit button from trying to submit a form when clicked
       d3.event.preventDefault();
 
       // Here we grab the text from the input box
-      var hstars = d3.select("#guess_stars").node().value;
-      var review_text = d3.select("#review_text").node().value;
-      console.log(hstars);
+      // var hstars = d3.select("#guess_stars").node().value;
+      var review_text = d3.select("#satAvg").node().value;
+      // console.log(hstars);
       console.log(review_text);
+      url = "/hee/"+review_text;
+      console.log(url)
+       d3.json(url, function (error, response) {
+                    console.log("Inside API")
+                    console.log(response);
 
+            });  
     });
+
+
+
+
+
+
+
   </script>
  </div>
+</div>
   
 </body>
 </html>
