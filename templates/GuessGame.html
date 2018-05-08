@@ -5,10 +5,11 @@
         <title>Yelp Review Analysis</title>
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
               integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-          <link rel="stylesheet" type="text/css" href="style.css"> 
+          <!-- <link rel="stylesheet" type="text/css" href="style.css">  -->
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
-         
+         <!-- Add style sheet -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
       </head>
 
 <body>
@@ -29,6 +30,7 @@
           <button class="navbar-header"><a href="data.html">Data</a></button>
           
       </div>  
+      
     </div><!-- /.container-fluid -->
   </nav>
   <div class="container">
@@ -36,6 +38,54 @@
       <img id="mainpicture" src="https://castdesignteam.com/wp-content/uploads/2017/10/Yelp_Banner.jpg">
         
   </div>
+ <div class = "row">
+    <div class="col-md-3 text-center"></div>
+    <div class="col-md-6 text-center">
+  <form onsubmit="return false">
+  <div class="form-group">
+    <label for="SATScore"> SAT Score: </label>
+    <input class="form-control" id="satAvg" placeholder="SATScore">
+  </div>  
+  <button type="submit" class="btn btn-primary" id= "predict-btn" value="submit" >Predict Range</button>
+</form>
+
+  
+  <div class="col-md-3 text-center"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+
+
+  <script type="text/javascript">
+    // This .on("click") function will trigger the request
+    d3.select("#predict-btn").on("click", function(event) {
+
+      // d3.event.preventDefault() can be used to prevent an event's default behavior.
+      // Here, it prevents the submit button from trying to submit a form when clicked
+      d3.event.preventDefault();
+
+      // Here we grab the text from the input box
+      // var hstars = d3.select("#guess_stars").node().value;
+      var review_text = d3.select("#satAvg").node().value;
+      // console.log(hstars);
+      console.log(review_text);
+      url = "/hee/"+review_text;
+      console.log(url)
+       d3.json(url, function (error, response) {
+                    console.log("Inside API")
+                    console.log(response);
+
+            });  
+    });
+
+
+
+
+
+
+
+  </script>
+ </div>
+</div>
   
 </body>
 </html>
