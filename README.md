@@ -17,10 +17,11 @@
 **ML algorithms:**
   1. Naive Bayes
   2. k-NN
-  3. KMeans
+  3. K-Means
   4. LSTM
   5. N-Gram
   6. TD-IDF
+  7. Linear Regression
   
  **Libraries:**
  1. Numpy
@@ -36,6 +37,7 @@
  
  **Sentiment Analysis Lexicon:**
  1. AFINN 
+ 2. VADER
  
 **Project components, steps, analyses, and final products:**
   1. Components and final products 
@@ -49,7 +51,7 @@
       * Cluster reviews into 5 categories (5 star-rating)
       * Use NLP to train model
       * Test Yelp rating/review data (user inputs both)
-      * Incorporate new human ratings from game into the model
+      * Incorporate new user star-rating from game into the model
       * Other...
 
 **Questions/Topics of Interest:**
