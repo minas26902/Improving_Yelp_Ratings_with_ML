@@ -10,7 +10,9 @@
 
 **Problem:** When you are researching restaurants on Yelp, do you look at the star rating or do you read the review? Do you look at both? Given that reviews are highly subjective, and star ratings can be influenced by various aspects of business performance, can we use machine learning to standardize the interpretation of reviews? 
 
-**Goal:** Our goal is to apply Natural Language Processing (NLP) and other features from the Yelp reviews into a model that outputs a new 5-star-rating, so that there is less discrepancy between reviews and star ratings. In order to make our model more robust, we will have humans rate reviews, and we will incorporate these ratings into our test model to get a sense of how humans are reading the sentiment.
+**Goal:** Our goal is to apply Natural Language Processing (NLP) and other features from the Yelp reviews into a model that outputs a new 5-star-rating, so that there is less discrepancy between reviews and star ratings. In order to make our model more robust, we will also incorporate new user star-ratings based on reviews read (meaning that someone who did not write the review gives a star-rating based on the review text alone) into our model so that it better reflects the review sentiment. 
+
+In order to make our model more robust, we will also incorporate new user star-ratings based on reviews read (meaning that someone who did not write the review gives a star-rating based on the review text alone) into our model so that it better reflects the review sentiment. 
 
 **Hypothesis:** We hypothesize that automating star ratings based on NLP of restaurant reviews will improve Yelp review experience by normalizing reviewer sentiment.
 
