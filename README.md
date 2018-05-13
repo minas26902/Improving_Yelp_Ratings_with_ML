@@ -1,10 +1,10 @@
 ## Improving the Yelp Review Experience by Stardardizing Reviewer Sentiment
 
 ### Team: 
-  Angela Detweiler
-  Hee Kang
-  Alexander Lam
-  Behesteh Mostaghni
+  *Angela Detweiler
+  *Hee Kang
+  *Alexander Lam
+  *Behesteh Mostaghni
 
 **Dataset link:** Yelp Dataset in Kaggle with a focus on Restaurants- https://www.kaggle.com/yelp-dataset/yelp-dataset
 
