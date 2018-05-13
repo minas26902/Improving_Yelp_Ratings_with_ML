@@ -1,12 +1,12 @@
-## UCBBEL Projet #3 ML Proposal
-
 ## Improving the Yelp Review Experience by Stardardizing Reviewer Sentiment
 
-### Team: Alex, Hee, Beheshteh, and Angela
+### Team: 
+  Angela Detweiler
+  Hee Kang
+  Alexander Lam
+  Behesteh Mostaghni
 
-### Dataset link - Yelp Dataset in Kaggle with a focus on Restaurants- https://www.kaggle.com/yelp-dataset/yelp-dataset
-
-### Link to Github repo: https://github.com/minas26902/UCB_Project3_ML
+**Dataset link:** Yelp Dataset in Kaggle with a focus on Restaurants- https://www.kaggle.com/yelp-dataset/yelp-dataset
 
 **Problem:** When you are researching restaurants on Yelp, do you look at the star rating or do you read the review? Do you look at both? Given that reviews are highly subjective, and star ratings can be influenced by various aspects of business performance, can we use machine learning to standardize the interpretation of reviews? 
 
